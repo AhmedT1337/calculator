@@ -7,7 +7,7 @@ root = Tk()
 
 check = False
 
-
+# Functions
 def sqrt_button() :
     global check
     if not check:
@@ -20,7 +20,7 @@ def sqrt_button() :
 def cube_sqrt(num) :
     return num ** (1/3)
 
-
+# the shift button function
 def checking():
     global check
     if not check:
@@ -28,6 +28,7 @@ def checking():
     else :
         check = False
 
+# main entry for the calculator
 entry = ttk.Entry(root, font = ("Arial", 12))
 entry.grid(row = 0, column = 0, columnspan = 8, ipadx = 150, ipady = 20, pady = 2, sticky = "wens")
 
